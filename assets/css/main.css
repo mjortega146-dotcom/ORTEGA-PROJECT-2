@@ -1290,6 +1290,83 @@ section,
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+
+/* Floating Circles - About KCC */
+.about-us {
+  position: relative;
+  overflow: hidden;
+  background: #97b0da;
+  padding: 60px 0;
+}
+
+/* Circle design */
+.about-us::before,
+.about-us::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* First Circle */
+.about-us::before {
+  width: 250px;
+  height: 250px;
+  background: rgba(30, 80, 160, 0.10);
+  top: 10%;
+  left: 5%;
+  animation: floatCircle 8s ease-in-out infinite;
+}
+
+/* Second Circle */
+.about-us::after {
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 193, 7, 0.15);
+  bottom: 5%;
+  right: 8%;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+/* Animation */
+@keyframes floatCircle {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-50px) translateX(30px);
+  }
+}
+
+/* Keep content above circles */
+.about-us .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Extra Floating Circle */
+.about-us .row {
+  position: relative;
+}
+
+.about-us .row::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(30, 80, 160, 0.08);
+  top: 60%;
+  left: 45%;
+  pointer-events: none;
+  animation: floatCircle 7s ease-in-out infinite;
+  z-index: 0;
+}
+
+
 .about-us .content h3 {
   font-size: 2rem;
   font-weight: 700;
