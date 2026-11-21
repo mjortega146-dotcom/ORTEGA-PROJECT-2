@@ -19,29 +19,29 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #a2c5eb; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37423b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #5fcf80; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --heading-color: #82aaea; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #90a99a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #7ad1eb; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #2873c4; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #272828;  /* The default color of the main navmenu links */
-  --nav-hover-color: #5fcf80; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #272828; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #5fcf80; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-hover-color: #0fc4f7; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #6a9ce2; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #6286d9; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #84e5e5; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #5569b0d2; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
+  --background-color: #516282;
+  --surface-color: #acb6e7;
 }
 
 .dark-background {
@@ -2320,4 +2320,366 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+/* ==========================================
+   PROFESSIONAL NAVY BLUE & GOLD THEME
+   Paste this at the END of style.css
+========================================== */
+
+:root {
+  --background-color: #08172b;
+  --default-color: #53657c;
+  --heading-color: #677a9f;
+  --accent-color: #d5ad5b;
+  --surface-color: #102641;
+  --contrast-color: #08172b;
+
+  --nav-color: #f3f6fc;
+  --nav-hover-color: #d5ad5b;
+  --nav-mobile-background-color: #0b1d33;
+  --nav-dropdown-background-color: #102641;
+  --nav-dropdown-color: #f3f6fc;
+  --nav-dropdown-hover-color: #d5ad5b;
+}
+
+/* MAIN BACKGROUND */
+body {
+  background: #08172b !important;
+  color: #cdddf1;
+}
+
+/* SECTION BACKGROUNDS */
+section,
+.section {
+  background: #08172b;
+  color: #d7e2f0;
+}
+
+/* ALTERNATING SECTION BACKGROUNDS */
+.light-background {
+  background: #0d2038 !important;
+  --background-color: #0d2038;
+  --surface-color: #102641;
+}
+
+/* HEADER */
+.header {
+  background: rgba(8, 23, 43, 0.96) !important;
+  border-bottom: 1px solid rgba(213, 173, 91, 0.25);
+}
+
+/* LOGO */
+.header .logo h1,
+.header .logo span {
+  color: #f3f6fc !important;
+}
+
+/* NAVIGATION LINKS */
+.navmenu a,
+.navmenu a:focus {
+  color: #f3f6fc !important;
+  transition: 0.3s;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: #d5ad5b !important;
+}
+
+/* NAVIGATION DROPDOWN */
+.navmenu .dropdown ul {
+  background: #102641 !important;
+  border: 1px solid rgba(213, 173, 91, 0.2);
+}
+
+.navmenu .dropdown ul a {
+  color: #f3f6fc !important;
+}
+
+.navmenu .dropdown ul a:hover {
+  color: #d5ad5b !important;
+}
+
+/* BUTTONS */
+button,
+.btn,
+.btn-getstarted,
+.hero .btn-get-started {
+  background: #d5ad5b;
+  color: #08172b !important;
+  border: 1px solid #d5ad5b;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+.btn-getstarted:hover,
+.hero .btn-get-started:hover {
+  background: transparent;
+  color: #d5ad5b !important;
+  border-color: #d5ad5b;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  color: #f3f6fc;
+}
+
+/* PARAGRAPHS */
+p {
+  color: #88b6ee;
+}
+
+/* CARDS */
+.card,
+.course-item,
+.trainers .member,
+.trainers-index .member,
+.events .card {
+  background: #102641 !important;
+  color: #d7e2f0;
+  border: 1px solid rgba(213, 173, 91, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.card:hover,
+.course-item:hover,
+.trainers .member:hover,
+.events .card:hover {
+  transform: translateY(-5px);
+  border-color: #d5ad5b;
+}
+
+/* ABOUT SECTION */
+.about-us {
+  background: #0d2038 !important;
+  color: #d7e2f0;
+}
+
+.about-us .content h3 {
+  color: #d5ad5b;
+}
+
+/* SECTION TITLES */
+.section-title h2 {
+  color: #d5ad5b;
+}
+
+.section-title p {
+  color: #d7e2f0;
+}
+
+/* LINKS */
+a {
+  color: #d5ad5b;
+}
+
+a:hover {
+  color: #f3d28b;
+}
+
+/* ICONS */
+i,
+.bi {
+  color: #d5ad5b;
+}
+
+/* FORMS */
+input,
+textarea,
+select {
+  background: #102641 !important;
+  color: #f3f6fc !important;
+  border: 1px solid rgba(213, 173, 91, 0.35) !important;
+  border-radius: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aabc0 !important;
+}
+
+/* FOOTER */
+.footer {
+  background: #050f1e !important;
+  color: #d7e2f0;
+  border-top: 1px solid rgba(213, 173, 91, 0.2);
+}
+
+.footer h4,
+.footer .footer-about .logo span {
+  color: #d5ad5b;
+}
+
+/* PAGE TITLE */
+.page-title {
+  background: #0d2038 !important;
+  color: #f3f6fc;
+}
+
+.page-title h1 {
+  color: #f3f6fc;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 1199px) {
+  .navmenu ul {
+    background: #0b1d33 !important;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: #f3f6fc !important;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active {
+    color: #d5ad5b !important;
+  }
+}
+
+
+/* ==========================================
+   KCC PROGRAM CARDS - NAVY BLUE & GOLD
+========================================== */
+
+/* PROGRAM CARD BACKGROUND */
+.program-card,
+.program-item,
+.program-box,
+.programs .card,
+.programs article,
+.academic-programs .card {
+    background: #102641 !important;
+    border: 1px solid rgba(213, 173, 91, 0.35) !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    color: #E2EAF5 !important;
+}
+
+/* CARD HEADINGS */
+.program-card h2,
+.program-card h3,
+.program-item h2,
+.program-item h3,
+.program-box h2,
+.program-box h3,
+.programs .card h3,
+.programs article h3 {
+    color: #D5AD5B !important;
+}
+
+/* CARD PARAGRAPHS AND COURSE LISTS */
+.program-card p,
+.program-card li,
+.program-item p,
+.program-item li,
+.program-box p,
+.program-box li,
+.programs .card p,
+.programs .card li,
+.programs article p,
+.programs article li {
+    color: #E2EAF5 !important;
+    line-height: 1.8;
+}
+
+/* CARD ICONS */
+.program-card i,
+.program-item i,
+.program-box i,
+.programs article i {
+    color: #D5AD5B !important;
+}
+
+/* CARD HOVER EFFECT */
+.program-card:hover,
+.program-item:hover,
+.program-box:hover,
+.programs article:hover {
+    border-color: #D5AD5B !important;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+/* ==========================================
+   KCC CORE VALUES AND FOUR PILLARS
+   NAVY BLUE & GOLD DESIGN
+========================================== */
+
+#values,
+#pillars {
+    background: #08172B !important;
+    padding: 80px 0;
+}
+
+/* CARDS */
+#values .value-card,
+#pillars .pillar-card {
+    background: #102641 !important;
+    border: 1px solid rgba(213, 173, 91, 0.3);
+    border-radius: 15px;
+    padding: 30px 22px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.35s ease;
+}
+
+/* HOVER EFFECT */
+#values .value-card:hover,
+#pillars .pillar-card:hover {
+    transform: translateY(-8px);
+    border-color: #D5AD5B;
+    box-shadow: 0 12px 30px rgba(213, 173, 91, 0.15);
+}
+
+/* ICONS */
+#values .value-card > i,
+#pillars .pillar-card > i {
+    display: inline-block;
+    color: #D5AD5B !important;
+    font-size: 48px !important;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+/* ICON HOVER */
+#values .value-card:hover > i,
+#pillars .pillar-card:hover > i {
+    transform: scale(1.15);
+    color: #F3D28B !important;
+}
+
+/* HEADINGS */
+#values .value-card h4,
+#pillars .pillar-card h4 {
+    color: #F3F6FC !important;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* DESCRIPTIONS */
+#values .value-card p,
+#pillars .pillar-card p {
+    color: #D7E2F0 !important;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* SECTION TITLES */
+#values .section-title h2,
+#pillars .section-title h2 {
+    color: #D5AD5B !important;
+}
+
+#values .section-title p,
+#pillars .section-title p {
+    color: #F3F6FC !important;
 }
